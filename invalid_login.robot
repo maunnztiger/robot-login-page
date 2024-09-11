@@ -11,8 +11,8 @@ Library         Browser
 *** Variables ***
 ${URL}            https://beauftragung.personenschaden.eucon.com
 ${browser}        firefox
-${user_email}     westphaligor2@gmail.com
-${password}       katzennest
+${user_email}     dein_döner_geht_nach_hause@gmail.com
+${password}       you_don_not_need_to_know_this
 ${error_id}       input-error
 ${expected_error_message}  Ungültiger Benutzername oder Passwort.
 
