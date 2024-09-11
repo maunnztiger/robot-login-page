@@ -1,112 +1,204 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.11.9 on win32)" generated="2024-09-11T12:26:12.137982" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.11.9 on win32)" generated="2024-09-11T12:46:21.935940" rpa="false" schemaversion="5">
 <suite id="s1" name="Invalid Login" source="C:\Users\nn\robot-login-page\invalid_login.robot">
 <test id="s1-t1" name="Invalid Login Into Personenschaden" line="20">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-09-11T12:26:13.698073" level="INFO">{"browser": "firefox", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\nn\\robot-login-page\\browser\\traces\\422579a5-e118-46cc-b49e-e3716bb579dc"}</msg>
-<msg time="2024-09-11T12:26:15.238502" level="INFO">Successfully created browser with options: {"browser":"firefox","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\nn\\robot-login-page\\browser\\traces\\422579a5-e118-46cc-b49e-e3716bb579dc"}</msg>
+<msg time="2024-09-11T12:46:23.355917" level="INFO">{"browser": "firefox", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\nn\\robot-login-page\\browser\\traces\\2468c82d-5780-4fa6-b470-2d742d3bab6c"}</msg>
+<msg time="2024-09-11T12:46:24.402644" level="INFO">Successfully created browser with options: {"browser":"firefox","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\nn\\robot-login-page\\browser\\traces\\2468c82d-5780-4fa6-b470-2d742d3bab6c"}</msg>
 <arg>${browser}</arg>
 <arg>headless=false</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-09-11T12:26:13.692997" elapsed="1.545505"/>
+<status status="PASS" start="2024-09-11T12:46:23.354914" elapsed="1.048726"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-09-11T12:26:19.298346" level="INFO">Successfully initialized new page object and opened url: https://beauftragung.personenschaden.eucon.com</msg>
-<msg time="2024-09-11T12:26:19.298346" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2024-09-11T12:46:32.215463" level="INFO">Successfully initialized new page object and opened url: https://beauftragung.personenschaden.eucon.com</msg>
+<msg time="2024-09-11T12:46:32.215463" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-09-11T12:26:15.379207" elapsed="3.919139"/>
+<status status="PASS" start="2024-09-11T12:46:24.443537" elapsed="7.772922"/>
 </kw>
 <kw name="Set Viewport Size" owner="Browser">
-<msg time="2024-09-11T12:26:19.364413" level="INFO">Set viewport size to: [object Object]</msg>
+<msg time="2024-09-11T12:46:32.265330" level="INFO">Set viewport size to: [object Object]</msg>
 <arg>1920</arg>
 <arg>1080</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Sets current Pages viewport size to specified dimensions.</doc>
-<status status="PASS" start="2024-09-11T12:26:19.298346" elapsed="0.070954"/>
+<status status="PASS" start="2024-09-11T12:46:32.217457" elapsed="0.048870"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2024-09-11T12:26:19.394961" level="INFO">Types the text 'westphaligor2@gmail.com' in the given field.</msg>
+<msg time="2024-09-11T12:46:32.284282" level="INFO">Types the text 'dein_döner_geht_nach_hause@gmail.com' in the given field.</msg>
 <arg>id=username</arg>
 <arg>${user_email}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-09-11T12:26:19.392963" elapsed="1.095168"/>
+<status status="PASS" start="2024-09-11T12:46:32.281286" elapsed="0.866136"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2024-09-11T12:26:20.488131" level="INFO">Types the text '$password' in the given field.</msg>
+<msg time="2024-09-11T12:46:33.150415" level="INFO">Types the text '$password' in the given field.</msg>
 <arg>id=password</arg>
 <arg>$password</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-09-11T12:26:20.488131" elapsed="0.190055"/>
+<status status="PASS" start="2024-09-11T12:46:33.149417" elapsed="0.120678"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2024-09-11T12:26:20.683194" level="INFO">Clicks the element 'id=kc-login'.</msg>
+<msg time="2024-09-11T12:46:33.272094" level="INFO">Clicks the element 'id=kc-login'.</msg>
 <arg>id=kc-login</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-09-11T12:26:20.678186" elapsed="0.270259"/>
+<status status="PASS" start="2024-09-11T12:46:33.271092" elapsed="0.745776"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-09-11T12:26:21.124562" level="INFO">Waited for Element with selector id=input-error at state visible</msg>
+<msg time="2024-09-11T12:46:34.162478" level="INFO">Waited for Element with selector id=input-error at state visible</msg>
 <arg>id=${error_id}</arg>
 <arg>visible</arg>
 <arg>10s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-09-11T12:26:20.953541" elapsed="0.171021"/>
+<status status="PASS" start="2024-09-11T12:46:34.027840" elapsed="0.135636"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-09-11T12:26:21.273251" level="INFO">Text: 'Ungültiger Benutzername oder Passwort.'</msg>
-<msg time="2024-09-11T12:26:21.273251" level="INFO">${error_message} = Ungültiger Benutzername oder Passwort.</msg>
+<msg time="2024-09-11T12:46:34.316067" level="INFO">Text: 'Ungültiger Benutzername oder Passwort.'</msg>
+<msg time="2024-09-11T12:46:34.316067" level="INFO">${error_message} = Ungültiger Benutzername oder Passwort.</msg>
 <var>${error_message}</var>
 <arg>id=${error_id}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-09-11T12:26:21.128128" elapsed="0.145123"/>
+<status status="PASS" start="2024-09-11T12:46:34.168463" elapsed="0.147604"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${error_message}</arg>
 <arg>${expected_error_message}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-09-11T12:26:21.273251" elapsed="0.002029"/>
+<status status="PASS" start="2024-09-11T12:46:34.318064" elapsed="0.000995"/>
 </kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2024-09-11T12:26:23.220710" level="INFO">Closed browser</msg>
+<msg time="2024-09-11T12:46:35.841426" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-09-11T12:26:21.275280" elapsed="1.945430"/>
+<status status="PASS" start="2024-09-11T12:46:34.320057" elapsed="1.521369"/>
 </kw>
 <doc>This is a login test case</doc>
-<status status="PASS" start="2024-09-11T12:26:13.687988" elapsed="9.534750"/>
+<status status="PASS" start="2024-09-11T12:46:23.349928" elapsed="12.495493"/>
+</test>
+<test id="s1-t2" name="Invalid Login With Empty Email" line="33">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-09-11T12:46:35.898186" level="INFO">{"browser": "firefox", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\nn\\robot-login-page\\browser\\traces\\6d314e77-f5cd-47c6-be93-6997ef80cfb2"}</msg>
+<msg time="2024-09-11T12:46:36.843790" level="INFO">Successfully created browser with options: {"browser":"firefox","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\nn\\robot-login-page\\browser\\traces\\6d314e77-f5cd-47c6-be93-6997ef80cfb2"}</msg>
+<arg>${browser}</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-09-11T12:46:35.898186" elapsed="0.945604"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-09-11T12:46:40.950474" level="INFO">Successfully initialized new page object and opened url: https://beauftragung.personenschaden.eucon.com</msg>
+<msg time="2024-09-11T12:46:40.950474" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-09-11T12:46:36.891735" elapsed="4.058739"/>
+</kw>
+<kw name="Set Viewport Size" owner="Browser">
+<msg time="2024-09-11T12:46:40.997348" level="INFO">Set viewport size to: [object Object]</msg>
+<arg>1920</arg>
+<arg>1080</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Sets current Pages viewport size to specified dimensions.</doc>
+<status status="PASS" start="2024-09-11T12:46:40.951470" elapsed="0.046876"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2024-09-11T12:46:41.041755" level="INFO">Types the text '' in the given field.</msg>
+<arg>id=username</arg>
+<arg>${EMPTY}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-09-11T12:46:41.039760" elapsed="1.133191"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2024-09-11T12:46:42.174947" level="INFO">Types the text '$password' in the given field.</msg>
+<arg>id=password</arg>
+<arg>$password</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-09-11T12:46:42.173950" elapsed="0.114694"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-09-11T12:46:42.289640" level="INFO">Clicks the element 'id=kc-login'.</msg>
+<arg>id=kc-login</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-11T12:46:42.289640" elapsed="0.224423"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-09-11T12:46:42.657743" level="INFO">Waited for Element with selector id=input-error at state visible</msg>
+<arg>id=${error_id}</arg>
+<arg>visible</arg>
+<arg>10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-09-11T12:46:42.520034" elapsed="0.137709"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-11T12:46:42.758989" level="INFO">Text: 'Ungültiger Benutzername oder Passwort.'</msg>
+<msg time="2024-09-11T12:46:42.758989" level="INFO">${error_message} = Ungültiger Benutzername oder Passwort.</msg>
+<var>${error_message}</var>
+<arg>id=${error_id}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-11T12:46:42.658739" elapsed="0.100250"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${error_message}</arg>
+<arg>${expected_error_message}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-09-11T12:46:42.759989" elapsed="0.000997"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2024-09-11T12:46:44.025483" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-11T12:46:42.761983" elapsed="1.264497"/>
+</kw>
+<doc>This is a login test case</doc>
+<status status="PASS" start="2024-09-11T12:46:35.892109" elapsed="8.135369"/>
 </test>
 <doc>invalid login into Personenschaden
 Useful links:
 * https://robotframework.org
 * https://marketsquare.github.io/robotframework-browser/Browser.html</doc>
-<status status="PASS" start="2024-09-11T12:26:12.147988" elapsed="11.133370"/>
+<status status="PASS" start="2024-09-11T12:46:21.937903" elapsed="22.102540"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Invalid Login">Invalid Login</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Invalid Login">Invalid Login</stat>
 </suite>
 </statistics>
 <errors>

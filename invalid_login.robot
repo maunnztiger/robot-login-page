@@ -29,3 +29,16 @@ Invalid Login Into Personenschaden
     ${error_message} =    Get Text     id=${error_id}
     Should Be Equal As Strings    ${error_message}    ${expected_error_message}
     Close Browser
+
+Invalid Login With Empty String
+    [Documentation]     This is a login test case
+    Browser.New Browser    ${browser}    headless=false
+    New Page    ${URL}
+    Set Viewport Size    1920    1080
+    Type Text  id=username    ${EMPTY}
+    Type Text   id=password   $password
+    Browser.Click     id=kc-login
+    Wait For Elements State    id=${error_id}    visible    10s
+    ${error_message} =    Get Text     id=${error_id}
+    Should Be Equal As Strings    ${error_message}    ${expected_error_message}
+    Close Browser
