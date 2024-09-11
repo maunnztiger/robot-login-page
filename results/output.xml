@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.9 on win32)" generated="2024-09-11T11:21:08.240433" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot-Login-Page" source="C:\Users\nn\robot-login-page">
+<suite id="s1-s1" name="Invalid Login" source="C:\Users\nn\robot-login-page\invalid_login.robot">
+<test id="s1-s1-t1" name="Invalid Login Into Personenschaden" line="18">
+<kw name="[Documentation] This is a login-Testcase">
+<msg time="2024-09-11T11:21:08.536110" level="FAIL">No keyword with name '[Documentation] This is a login-Testcase' found.</msg>
+<status status="FAIL" start="2024-09-11T11:21:08.536110" elapsed="0.008284">No keyword with name '[Documentation] This is a login-Testcase' found.</status>
+</kw>
+<kw name="Open Browser ${browser} headless=false">
+<status status="NOT RUN" start="2024-09-11T11:21:08.544893" elapsed="0.005838"/>
+</kw>
+<kw name="New Page ${URL}">
+<status status="NOT RUN" start="2024-09-11T11:21:08.553020" elapsed="0.002089"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" start="2024-09-11T11:21:08.557102" elapsed="0.001755"/>
+</kw>
+<kw name="Type Text">
+<arg>id=username</arg>
+<arg>${user_email}</arg>
+<status status="NOT RUN" start="2024-09-11T11:21:08.560544" elapsed="0.002875"/>
+</kw>
+<kw name="Type Secret">
+<arg>id=password</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2024-09-11T11:21:08.565414" elapsed="0.002016"/>
+</kw>
+<kw name="Click id=kc-login">
+<status status="NOT RUN" start="2024-09-11T11:21:08.569426" elapsed="0.001994"/>
+</kw>
+<status status="FAIL" start="2024-09-11T11:21:08.536110" elapsed="0.035954">No keyword with name '[Documentation] This is a login-Testcase' found.</status>
+</test>
+<doc>invalid login into Personenschaden
+Useful links:
+* https://robotframework.org
+* https://marketsquare.github.io/robotframework-browser/Browser.html</doc>
+<status status="FAIL" start="2024-09-11T11:21:08.294596" elapsed="0.281808"/>
+</suite>
+<status status="FAIL" start="2024-09-11T11:21:08.247414" elapsed="0.330112"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Robot-Login-Page">Robot-Login-Page</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Invalid Login">Robot-Login-Page.Invalid Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-11T11:21:08.521938" level="ERROR">Error in file 'C:\Users\nn\robot-login-page\invalid_login.robot' on line 7: Initializing library 'Browser' with no arguments failed: Could not find node dependencies in installation directory `C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper.` Run `rfbrowser init` to install the dependencies.
+Traceback (most recent call last):
+  File "C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\browser.py", line 875, in __init__
+    self.playwright = Playwright(
+                      ^^^^^^^^^^^
+  File "C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\playwright.py", line 53, in __init__
+    self.ensure_node_dependencies()
+  File "C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\playwright.py", line 85, in ensure_node_dependencies
+    raise RuntimeError(
+RuntimeError: Could not find node dependencies in installation directory `C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper.` Run `rfbrowser init` to install the dependencies.</msg>
+</errors>
+</robot>
