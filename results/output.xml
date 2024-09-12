@@ -1,65 +1,250 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.11.9 on win32)" generated="2024-09-11T11:21:08.240433" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.11.9 on win32)" generated="2024-09-12T15:44:05.980457" rpa="false" schemaversion="5">
 <suite id="s1" name="Robot-Login-Page" source="C:\Users\nn\robot-login-page">
 <suite id="s1-s1" name="Invalid Login" source="C:\Users\nn\robot-login-page\invalid_login.robot">
-<test id="s1-s1-t1" name="Invalid Login Into Personenschaden" line="18">
-<kw name="[Documentation] This is a login-Testcase">
-<msg time="2024-09-11T11:21:08.536110" level="FAIL">No keyword with name '[Documentation] This is a login-Testcase' found.</msg>
-<status status="FAIL" start="2024-09-11T11:21:08.536110" elapsed="0.008284">No keyword with name '[Documentation] This is a login-Testcase' found.</status>
+<test id="s1-s1-t1" name="Invalid Login Into Personenschaden" line="22">
+<kw name="Given the user opens up" owner="resource">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-09-12T15:44:07.452615" level="INFO">{"browser": "firefox", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\nn\\robot-login-page\\results\\browser\\traces\\ed46d447-32e5-4ee6-a659-ee4e8fc22df7"}</msg>
+<msg time="2024-09-12T15:44:09.115148" level="INFO">Successfully created browser with options: {"browser":"firefox","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\nn\\robot-login-page\\results\\browser\\traces\\ed46d447-32e5-4ee6-a659-ee4e8fc22df7"}</msg>
+<arg>${browser}</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-09-12T15:44:07.450619" elapsed="1.665527"/>
 </kw>
-<kw name="Open Browser ${browser} headless=false">
-<status status="NOT RUN" start="2024-09-11T11:21:08.544893" elapsed="0.005838"/>
+<arg>firefox</arg>
+<status status="PASS" start="2024-09-12T15:44:07.443637" elapsed="1.672509"/>
 </kw>
-<kw name="New Page ${URL}">
-<status status="NOT RUN" start="2024-09-11T11:21:08.553020" elapsed="0.002089"/>
+<kw name="And opens the Home page of" owner="resource">
+<kw name="New Page" owner="Browser">
+<msg time="2024-09-12T15:44:13.331200" level="INFO">Successfully initialized new page object and opened url: https://beauftragung.personenschaden.eucon.com</msg>
+<msg time="2024-09-12T15:44:13.332195" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-09-12T15:44:09.181969" elapsed="4.151222"/>
 </kw>
-<kw name="Maximize Browser Window">
-<status status="NOT RUN" start="2024-09-11T11:21:08.557102" elapsed="0.001755"/>
+<arg>https://beauftragung.personenschaden.eucon.com</arg>
+<status status="PASS" start="2024-09-12T15:44:09.174987" elapsed="4.158204"/>
 </kw>
-<kw name="Type Text">
+<kw name="When the user enters his" owner="resource">
+<kw name="Type Text" owner="Browser">
+<msg time="2024-09-12T15:44:13.381065" level="INFO">Types the text 'emailadress' in the given field.</msg>
 <arg>id=username</arg>
 <arg>${user_email}</arg>
-<status status="NOT RUN" start="2024-09-11T11:21:08.560544" elapsed="0.002875"/>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-09-12T15:44:13.379074" elapsed="0.944336"/>
 </kw>
-<kw name="Type Secret">
+<arg>emailadress</arg>
+<status status="PASS" start="2024-09-12T15:44:13.367101" elapsed="0.956309"/>
+</kw>
+<kw name="And enters his" owner="resource">
+<kw name="Type Text" owner="Browser">
+<msg time="2024-09-12T15:44:14.382254" level="INFO">Types the text 'password' in the given field.</msg>
 <arg>id=password</arg>
 <arg>${password}</arg>
-<status status="NOT RUN" start="2024-09-11T11:21:08.565414" elapsed="0.002016"/>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-09-12T15:44:14.381256" elapsed="0.155611"/>
 </kw>
-<kw name="Click id=kc-login">
-<status status="NOT RUN" start="2024-09-11T11:21:08.569426" elapsed="0.001994"/>
+<arg>password</arg>
+<status status="PASS" start="2024-09-12T15:44:14.374274" elapsed="0.163590"/>
 </kw>
-<status status="FAIL" start="2024-09-11T11:21:08.536110" elapsed="0.035954">No keyword with name '[Documentation] This is a login-Testcase' found.</status>
+<kw name="And clicks the login button" owner="resource">
+<kw name="Click" owner="Browser">
+<msg time="2024-09-12T15:44:14.557484" level="INFO">Clicks the element 'id=kc-login'.</msg>
+<arg>id=kc-login</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-12T15:44:14.553408" elapsed="0.321172"/>
+</kw>
+<status status="PASS" start="2024-09-12T15:44:14.548421" elapsed="0.327155"/>
+</kw>
+<kw name="Then an error message occurs" owner="resource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-09-12T15:44:15.030739" level="INFO">Waited for Element with selector id=input-error at state visible</msg>
+<arg>id=input-error</arg>
+<arg>visible</arg>
+<arg>10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-09-12T15:44:14.890845" elapsed="0.139894"/>
+</kw>
+<status status="PASS" start="2024-09-12T15:44:14.881561" elapsed="0.150289"/>
+</kw>
+<kw name="And this error message is" owner="resource">
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-12T15:44:15.146395" level="INFO">Text: 'Ungültiger Benutzername oder Passwort.'</msg>
+<msg time="2024-09-12T15:44:15.146395" level="INFO">${error_message} = Ungültiger Benutzername oder Passwort.</msg>
+<var>${error_message}</var>
+<arg>id=input-error</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-12T15:44:15.045967" elapsed="0.101425"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${error_message}</arg>
+<arg>${expected_error_message}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-09-12T15:44:15.147392" elapsed="0.000997"/>
+</kw>
+<arg>Ungültiger Benutzername oder Passwort.</arg>
+<status status="PASS" start="2024-09-12T15:44:15.036843" elapsed="0.112544"/>
+</kw>
+<kw name="And the user closes the browser in case of failed login" owner="resource">
+<kw name="Close Browser" owner="Browser">
+<msg time="2024-09-12T15:44:16.930342" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-12T15:44:15.176979" elapsed="1.754359"/>
+</kw>
+<status status="PASS" start="2024-09-12T15:44:15.171299" elapsed="1.760039"/>
+</kw>
+<doc>This is a login test case</doc>
+<status status="PASS" start="2024-09-12T15:44:07.432539" elapsed="9.504784"/>
+</test>
+<test id="s1-s1-t2" name="Invalid Login With Empty String" line="33">
+<kw name="Given the user opens up" owner="resource">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-09-12T15:44:16.985170" level="INFO">{"browser": "firefox", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\nn\\robot-login-page\\results\\browser\\traces\\71d38724-67c2-4137-885c-5ac69b590274"}</msg>
+<msg time="2024-09-12T15:44:17.977637" level="INFO">Successfully created browser with options: {"browser":"firefox","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\nn\\robot-login-page\\results\\browser\\traces\\71d38724-67c2-4137-885c-5ac69b590274"}</msg>
+<arg>${browser}</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-09-12T15:44:16.984172" elapsed="0.994448"/>
+</kw>
+<arg>firefox</arg>
+<status status="PASS" start="2024-09-12T15:44:16.981181" elapsed="0.997439"/>
+</kw>
+<kw name="And opens the Home page of" owner="resource">
+<kw name="New Page" owner="Browser">
+<msg time="2024-09-12T15:44:22.408991" level="INFO">Successfully initialized new page object and opened url: https://beauftragung.personenschaden.eucon.com</msg>
+<msg time="2024-09-12T15:44:22.411019" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-09-12T15:44:18.014529" elapsed="4.396490"/>
+</kw>
+<arg>https://beauftragung.personenschaden.eucon.com</arg>
+<status status="PASS" start="2024-09-12T15:44:18.008539" elapsed="4.402480"/>
+</kw>
+<kw name="the user enters an empty" owner="resource">
+<kw name="Type Text" owner="Browser">
+<msg time="2024-09-12T15:44:22.479180" level="INFO">Types the text 'emailadress' in the given field.</msg>
+<arg>id=username</arg>
+<arg>${EMPTY}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-09-12T15:44:22.476187" elapsed="1.002842"/>
+</kw>
+<arg>emailadress</arg>
+<status status="PASS" start="2024-09-12T15:44:22.469933" elapsed="1.010095"/>
+</kw>
+<kw name="And enters his" owner="resource">
+<kw name="Type Text" owner="Browser">
+<msg time="2024-09-12T15:44:23.492992" level="INFO">Types the text 'password' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-09-12T15:44:23.491013" elapsed="0.124651"/>
+</kw>
+<arg>password</arg>
+<status status="PASS" start="2024-09-12T15:44:23.482021" elapsed="0.135666"/>
+</kw>
+<kw name="And clicks the login button" owner="resource">
+<kw name="Click" owner="Browser">
+<msg time="2024-09-12T15:44:23.647578" level="INFO">Clicks the element 'id=kc-login'.</msg>
+<arg>id=kc-login</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-12T15:44:23.645597" elapsed="0.266293"/>
+</kw>
+<status status="PASS" start="2024-09-12T15:44:23.635611" elapsed="0.277277"/>
+</kw>
+<kw name="Then an error message occurs" owner="resource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-09-12T15:44:24.084233" level="INFO">Waited for Element with selector id=input-error at state visible</msg>
+<arg>id=input-error</arg>
+<arg>visible</arg>
+<arg>10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-09-12T15:44:23.949789" elapsed="0.135446"/>
+</kw>
+<status status="PASS" start="2024-09-12T15:44:23.942807" elapsed="0.142428"/>
+</kw>
+<kw name="And this error message is" owner="resource">
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-12T15:44:24.212329" level="INFO">Text: 'Ungültiger Benutzername oder Passwort.'</msg>
+<msg time="2024-09-12T15:44:24.213118" level="INFO">${error_message} = Ungültiger Benutzername oder Passwort.</msg>
+<var>${error_message}</var>
+<arg>id=input-error</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-12T15:44:24.099919" elapsed="0.113199"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${error_message}</arg>
+<arg>${expected_error_message}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-09-12T15:44:24.214116" elapsed="0.000997"/>
+</kw>
+<arg>Ungültiger Benutzername oder Passwort.</arg>
+<status status="PASS" start="2024-09-12T15:44:24.095203" elapsed="0.119910"/>
+</kw>
+<kw name="And the user closes the browser in case of failed login" owner="resource">
+<kw name="Close Browser" owner="Browser">
+<msg time="2024-09-12T15:44:26.002158" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-12T15:44:24.230501" elapsed="1.772654"/>
+</kw>
+<status status="PASS" start="2024-09-12T15:44:24.226219" elapsed="1.776936"/>
+</kw>
+<doc>This is a login test case</doc>
+<status status="PASS" start="2024-09-12T15:44:16.975928" elapsed="9.032223"/>
 </test>
 <doc>invalid login into Personenschaden
 Useful links:
 * https://robotframework.org
 * https://marketsquare.github.io/robotframework-browser/Browser.html</doc>
-<status status="FAIL" start="2024-09-11T11:21:08.294596" elapsed="0.281808"/>
+<status status="PASS" start="2024-09-12T15:44:06.060404" elapsed="19.961701"/>
 </suite>
-<status status="FAIL" start="2024-09-11T11:21:08.247414" elapsed="0.330112"/>
+<status status="PASS" start="2024-09-12T15:44:06.015520" elapsed="20.021786"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Robot-Login-Page">Robot-Login-Page</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="Invalid Login">Robot-Login-Page.Invalid Login</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Robot-Login-Page">Robot-Login-Page</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Invalid Login">Robot-Login-Page.Invalid Login</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-09-11T11:21:08.521938" level="ERROR">Error in file 'C:\Users\nn\robot-login-page\invalid_login.robot' on line 7: Initializing library 'Browser' with no arguments failed: Could not find node dependencies in installation directory `C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper.` Run `rfbrowser init` to install the dependencies.
-Traceback (most recent call last):
-  File "C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\browser.py", line 875, in __init__
-    self.playwright = Playwright(
-                      ^^^^^^^^^^^
-  File "C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\playwright.py", line 53, in __init__
-    self.ensure_node_dependencies()
-  File "C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\playwright.py", line 85, in ensure_node_dependencies
-    raise RuntimeError(
-RuntimeError: Could not find node dependencies in installation directory `C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper.` Run `rfbrowser init` to install the dependencies.</msg>
 </errors>
 </robot>

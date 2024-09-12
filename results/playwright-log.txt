@@ -1,0 +1,114 @@
+{"level":30,"time":"2024-09-12T13:44:07.062Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Listening on 51126"}
+(node:13372) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-09-12T13:44:07.430Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-12T13:44:07.431Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-12T13:44:07.439Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-12T13:44:07.439Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-12T13:44:07.459Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-09-12T13:44:09.112Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Adding browser to stack: firefox, version: 128.0"}
+{"level":30,"time":"2024-09-12T13:44:09.113Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-09-12T13:44:09.113Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-09-12T13:44:09.190Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-09-12T13:44:09.191Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-09-12T13:44:09.305Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Changed active context"}
+{"level":30,"time":"2024-09-12T13:44:11.744Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Video path: undefined"}
+{"level":30,"time":"2024-09-12T13:44:11.744Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Changed active page"}
+{"level":30,"time":"2024-09-12T13:44:13.329Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method newPage"}
+{"level":30,"time":"2024-09-12T13:44:13.385Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method typeText"}
+{"level":30,"time":"2024-09-12T13:44:13.386Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Strict mode is enabled, find Locator with id=username in page."}
+{"level":30,"time":"2024-09-12T13:44:14.319Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method typeText"}
+{"level":30,"time":"2024-09-12T13:44:14.387Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method typeText"}
+{"level":30,"time":"2024-09-12T13:44:14.390Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2024-09-12T13:44:14.535Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method typeText"}
+{"level":30,"time":"2024-09-12T13:44:14.563Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method click"}
+{"level":30,"time":"2024-09-12T13:44:14.564Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Strict mode is enabled, find Locator with id=kc-login in page."}
+{"level":30,"time":"2024-09-12T13:44:14.872Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method click"}
+{"level":30,"time":"2024-09-12T13:44:14.897Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-09-12T13:44:14.898Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Strict mode is enabled, find Locator with id=input-error in page."}
+{"level":30,"time":"2024-09-12T13:44:15.028Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-09-12T13:44:15.052Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-12T13:44:15.052Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Strict mode is enabled, find Locator with id=input-error in page."}
+{"level":30,"time":"2024-09-12T13:44:15.143Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Retrieved text for element id=input-error containing Ungültiger Benutzername oder Passwort."}
+{"level":30,"time":"2024-09-12T13:44:15.144Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-12T13:44:15.181Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-09-12T13:44:15.206Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Removed page=99a680b5-d828-4190-9236-a92be24bcfa8 from context=e6917e24-ae88-45bd-b590-3acb8d9911d3 page stack"}
+{"level":30,"time":"2024-09-12T13:44:16.928Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper\index.js:10748:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper\index.js:11364:59)
+    at PlaywrightServer.setTimeout (C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper\index.js:11603:57)
+    at Object.onReceiveHalfClose (C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-09-12T13:44:16.972Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-12T13:44:16.972Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-12T13:44:16.979Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-12T13:44:16.979Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-12T13:44:16.988Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-09-12T13:44:17.976Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Adding browser to stack: firefox, version: 128.0"}
+{"level":30,"time":"2024-09-12T13:44:17.976Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-09-12T13:44:17.976Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-09-12T13:44:18.018Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-09-12T13:44:18.018Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-09-12T13:44:18.116Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Changed active context"}
+{"level":30,"time":"2024-09-12T13:44:20.741Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Video path: undefined"}
+{"level":30,"time":"2024-09-12T13:44:20.741Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Changed active page"}
+{"level":30,"time":"2024-09-12T13:44:22.407Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method newPage"}
+{"level":30,"time":"2024-09-12T13:44:22.482Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method typeText"}
+{"level":30,"time":"2024-09-12T13:44:22.482Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Strict mode is enabled, find Locator with id=username in page."}
+{"level":30,"time":"2024-09-12T13:44:23.477Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method typeText"}
+{"level":30,"time":"2024-09-12T13:44:23.496Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method typeText"}
+{"level":30,"time":"2024-09-12T13:44:23.496Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2024-09-12T13:44:23.613Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method typeText"}
+{"level":30,"time":"2024-09-12T13:44:23.651Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method click"}
+{"level":30,"time":"2024-09-12T13:44:23.651Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Strict mode is enabled, find Locator with id=kc-login in page."}
+{"level":30,"time":"2024-09-12T13:44:23.910Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method click"}
+{"level":30,"time":"2024-09-12T13:44:23.954Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-09-12T13:44:23.955Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Strict mode is enabled, find Locator with id=input-error in page."}
+{"level":30,"time":"2024-09-12T13:44:24.082Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-09-12T13:44:24.104Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-12T13:44:24.104Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Strict mode is enabled, find Locator with id=input-error in page."}
+{"level":30,"time":"2024-09-12T13:44:24.210Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Retrieved text for element id=input-error containing Ungültiger Benutzername oder Passwort."}
+{"level":30,"time":"2024-09-12T13:44:24.210Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-12T13:44:24.234Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-09-12T13:44:24.248Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Removed page=638ba9ea-8331-424d-ac91-8ba5a6444073 from context=eb69fca4-ce72-4483-a216-b63fbbefae1f page stack"}
+{"level":30,"time":"2024-09-12T13:44:26.001Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper\index.js:10748:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper\index.js:11364:59)
+    at PlaywrightServer.setTimeout (C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper\index.js:11603:57)
+    at Object.onReceiveHalfClose (C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-09-12T13:44:26.018Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-12T13:44:26.018Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper\index.js:10748:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper\index.js:11364:59)
+    at PlaywrightServer.setTimeout (C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper\index.js:11603:57)
+    at Object.onReceiveHalfClose (C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\nn\robot-login-page\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-09-12T13:44:26.032Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-12T13:44:26.033Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-12T13:44:31.139Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-09-12T13:44:31.140Z","pid":13372,"hostname":"DESKTOP-CLBIL90","msg":"End of node method closeAllBrowsers"}
